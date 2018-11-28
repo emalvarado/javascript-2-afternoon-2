@@ -134,6 +134,20 @@ var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
 
 //Code Here
 
+function divider(numbersArray){
+  let evens=[];
+  let odds=[];
+  for(i=0; i<numbersArray.length; i++){
+    if(numbersArray[i]%2===0){
+      evens.push(numbersArray[i])
+    }else {
+      odds.push(numbersArray[i])
+    }
+  }
+  return arr = [evens, odds]
+}
+
+
 
 
 ////////// PROBLEM 7 //////////
@@ -154,6 +168,16 @@ var getRandomArbitrary = function() {
 */
 
 //Code Here
+
+function finder(arr){
+  let num = getRandomArbitrary();
+  for(let i=0; i<arr.length; i++){
+    if(arr[i]===num){
+      return true
+    }
+  }
+  return false
+}
 
 
 
@@ -184,6 +208,17 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 
 //Code Here
 
+function removeItem(myGroceryList, item){
+  if(myGroceryList.includes(item)===true){
+    return myGroceryList.filter(item => item)
+    }
+  }
+
+
+function addItem(myGroceryList,item){
+  return myGroceryList.push(item);
+}
+
 
 
 ////////// PROBLEM 9 //////////
@@ -193,6 +228,14 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 */
 
 //Code Here
+
+function maker(){
+  let arr=[];
+  for(i=1; i<=215; i++){
+    arr.push(i)
+  }
+  return arr;
+};
 
 
 
@@ -209,6 +252,13 @@ var numbers = [5, '9', 16, 19, '25', '34', 48];
 */
   
 //Code Here
+
+function addTen(numbers){
+  let arr= numbers.map(function(element){
+    return element + 10;
+  })
+return arr;
+}
 
 
 
@@ -235,6 +285,12 @@ for(var i = 0; i < num2; i++){
 
 //Code Here
 
+function longer(arr1,arr2){
+  if(arr1.length>arr2.length){
+    return arr1
+  }else return arr2
+}
+
 
 
 /*
@@ -246,6 +302,9 @@ for(var i = 0; i < num2; i++){
 */
 
 //Code Here
+function both(arr1,arr2){
+
+}
 
 
 
@@ -286,7 +345,8 @@ var colt = {
 */
 
 //Code Here
-
+devMountainEmployees = [tyler, cahlan, ryan, colt];
+console.log (devMountainEmployees.length);
 
 
 /*
@@ -296,6 +356,9 @@ var colt = {
 
 //Code Here
 
+// devMountainEmployees = devMountainEmployees.filter(val){
+//   return val !== 'Cahlan'
+// }
 
 
 ////////// PROBLEM 13 //////////
